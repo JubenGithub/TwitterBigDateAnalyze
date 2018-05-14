@@ -68,7 +68,7 @@ if ($enddate==""){
                                 <tbody class="tm-bg-light-orange">
                                 <?php
                                 if(is_numeric($count)){
-                                    $url="10.231.43.99:8787/$name/$count/$startdate/$enddate";
+                                    $url="localhost:8787/$name/$count/$startdate/$enddate";
                                     $ch = curl_init();
                                     curl_setopt($ch, CURLOPT_URL,$url);
                                     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
